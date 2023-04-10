@@ -1,0 +1,18 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 3000",
+    "build": "rm -rf public/scripts && tsc",
+    "build:dev": "rm -rf public/scripts && tsc -p tsconfig-dev.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.1"
+  }
+}
