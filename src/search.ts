@@ -8,10 +8,10 @@ interface SearchFormData {
   }
   
 function search(formData: SearchFormData): void {
-    console.log(formData);
+  console.log(formData);
 }
 const searchForm = document.querySelector('#search-form') as HTMLFormElement;
-  searchForm.addEventListener('submit', (event) => {
+searchForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const formData = new FormData(searchForm);
   const searchData: SearchFormData = {
