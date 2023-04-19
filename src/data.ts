@@ -5,7 +5,7 @@ interface UserData {
 
 export function GetUserData(): UserData | undefined {
   const userDataString = localStorage.getItem('user');
-
+  // const userData = JSON.parse(userDataString);
   if(userDataString) {
     try {
       const userData: unknown = JSON.parse(userDataString);
