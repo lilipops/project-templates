@@ -1,5 +1,5 @@
 import { renderBlock } from './lib.js'
-
+// must include now the API adress 
 export function renderSearchStubBlock () {
   renderBlock(
     'search-results-block',
