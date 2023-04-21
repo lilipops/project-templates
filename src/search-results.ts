@@ -64,7 +64,7 @@ export function renderSearchResultsBlock () {
       <li class="result">
         <div class="result-container">
           <div class="result-img-container">
-            <div class="favorites"></div>
+            <div class="favorites" data-id="2"></div>
             <img class="result-img" src="./img/result-2.png" alt="">
           </div>	
           <div class="result-info">
