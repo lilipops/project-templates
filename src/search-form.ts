@@ -8,7 +8,7 @@ export function renderSearchFormBlock(checkInDate: string = getNextDay(1), check
   renderBlock(
     'search-form-block',
     `
-    <form>
+    <form id="search-form">
       <fieldset class="search-filedset">
         <div class="row">
           <div>
