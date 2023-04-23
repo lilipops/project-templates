@@ -27,10 +27,10 @@ function responseToJson(requestPromise) {
 
 export function search(checkInDate: Date, checkOutDate: Date, maxPrice?: number) {
   let url = 'http://localhost:3030/places?' +
-    `checkInDate=${checkInDate.getTime()}&` +
-    `checkOutDate=${checkOutDate.getTime()}&` +
+    `checkInDate=${dateToUnixStamp(checkInDate)}&` +
+    `checkOutDate=${dateToUnixStamp(checkOutDate)}&` +
     'coordinates=59.9386,30.3141'
-  
+
   if (maxPrice != null) {
     url += `&maxPrice=${maxPrice}`
   }
