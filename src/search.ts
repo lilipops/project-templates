@@ -8,7 +8,7 @@ export interface SearchFormData {
     maxPrice?: number;
   }
 
-
+//infaly trying change something here
 
 function dateToUnixStamp(date) {
   return date.getTime() / 1000
