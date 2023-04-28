@@ -15,7 +15,7 @@ interface UserData {
   //   bookedDates: number[];
   // }
   
-function toggleFavoriteItem(property: Property): void {
+export function toggleFavoriteItem(property: Property): void {
   const favoriteItemsString = localStorage.getItem('favoriteItems');
   let favoriteItems: Property[] = [];
   
