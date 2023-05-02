@@ -17,6 +17,10 @@ export function renderSearchFormBlock(checkInDate: string = getNextDay(1), check
             <input type="hidden" disabled value="59.9386,30.3141" />
           </div>
         </div>
+        <div class="providers">
+            <label><input type="checkbox" name="provider" value="homy" checked /> Homy</label>
+            <label><input type="checkbox" name="provider" value="flat-rent" checked /> FlatRent</label>
+          </div>
         <div class="row">
           <div>
             <label for="check-in-date">Дата заезда</label>

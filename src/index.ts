@@ -26,9 +26,9 @@ window.addEventListener('DOMContentLoaded', () => {
   searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const searchData: SearchFormData = {
-      checkIn: new Date((document.querySelector('#date-from') as HTMLInputElement).value),
-      checkOut: new Date((document.querySelector('#date-to') as HTMLInputElement).value),
-      provider: (document.querySelector('#provider') as HTMLSelectElement).value,
+      checkIn: new Date((document.querySelector('#check-in-date') as HTMLInputElement).value),
+      checkOut: new Date((document.querySelector('#check-out-date') as HTMLInputElement).value),
+      provider: (document.querySelector('.providers') as HTMLSelectElement).value,
       maxPrice: (document.querySelector('#max-price') as HTMLInputElement).value ? parseInt((document.querySelector('#max-price') as HTMLInputElement).value, 10) : undefined,
     };
     search(searchData.checkIn, searchData.checkOut, searchData.maxPrice);
