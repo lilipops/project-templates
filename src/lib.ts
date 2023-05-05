@@ -2,7 +2,7 @@ export function renderBlock (elementId, html) {
   const element = document.getElementById(elementId)
   element.innerHTML = html
 }
-
+//jj
 export function renderToast (message, action) {
   let messageText = ''
   
